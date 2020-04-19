@@ -1,0 +1,214 @@
+/* general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: #fff000; */
+}
+
+.cabecalho {
+  padding: 60px;
+  text-align: center;
+  background: #3b4055;
+  background-image: url(../assets/bg/coronavirus-infection-with-copy-space.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.cabecalho-title {
+  color: white;
+  font-size: 52px;
+  position: relative;
+}
+
+.menunav {
+  display: flex;
+  padding: 0px;
+  background-color: #3b4055;
+}
+
+.menunav a {
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 auto;
+}
+
+.menunav a:hover,
+.menunav a:active {
+  color: white;
+  font-size: larger;
+  background-color: #40525f88;
+}
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  position: relative;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+
+.banner-icon {
+  height: 60px;
+}
+
+.banner-txt {
+  color: #3b4055;
+  padding: 15px 0 0 15px;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .banner-img {
+    margin: 0 auto;
+  }
+
+  .banner-icon {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.news-title {
+  display: flex;
+  color: white;
+  padding: 10px;
+  background-color: #3b4055;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  margin: 0 auto;
+  height: auto;
+  /* background-color: #ff2244; */
+}
+
+.news {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+}
+
+.news-highlight {
+  width: 48%;
+  height: 335px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid;
+  background-color: #415a6a66;
+}
+
+.news-img {
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  height: 175px;
+}
+
+@media (max-width: 768px) {
+  .news {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .news-highlight {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news-img {
+    margin: 0 auto;
+    height: 175px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+}
+
+.news-dst {
+  text-align: center;
+  font-size: 35px;
+}
+
+.news-text,
+.sobre-text {
+  text-align: left;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.news-link {
+  text-align: right;
+  float: right;
+  font-size: 20px;
+}
+
+
+
+footer {
+  color: white;
+  font-size: smaller;
+  text-align: center;
+  padding: 10px;
+  background-color: #3b4055;
+}
+
+footer a {
+  color: white;
+  font-size: smaller;
+}
+
+/* ////////////////////////////////////////////////////////////// */
+
+
+
+/* small screens */
+@media screen and (min-width: 0px) {
+  .sm-wt {
+    flex-direction: column;
+    width: 500px;
+  }
+}
+
+/* medium screens */
+@media screen and (min-width: 1000px) {
+  .md-wt {
+    width: 1000px;
+  }
+}
+
+/* large screens */
+@media screen and (min-width: 1350px) {
+  .lg-wt {
+    width: 1350px;
+  }
+}
