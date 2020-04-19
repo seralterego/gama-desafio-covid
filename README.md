@@ -1,2 +1,2 @@
-# gama-desafio-covid-
-Repositório para o Desafio Covid-19 da Gama Academy
+# gama-desafio-covid
+Repositório para o desafio da Gama Academy - Hiring Coders
