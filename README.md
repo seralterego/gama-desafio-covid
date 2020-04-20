@@ -27,4 +27,4 @@ Repositório para o desafio da Gama Academy - Hiring Coders
 
 ## Resultado do desenvolvimento da página
 
-- pasta do projeto [aqui](./projeto/)
+- Links da Landing Page [aqui](https://seralterego-desafiocovid.netlify.app/)

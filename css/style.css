@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:300,400,600,700);
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +7,6 @@
 }
 
 body {
-  display: block;
   margin: 0;
   font-family: Nunito, sans-serif;
   font-size: 1rem;
@@ -28,6 +29,7 @@ h6 {
 a {
   cursor: pointer;
   text-decoration: none;
+  color: inherit;
 }
 
 .container {
@@ -40,6 +42,7 @@ a {
 
 @media (min-width:576px) {
   .container {
+    flex-direction: column;
     max-width: 570px;
   }
 }
@@ -82,9 +85,9 @@ a {
 }
 
 .cabecalho-title {
+  position: relative;
   color: white;
   font-size: 30px;
-  position: relative;
 }
 
 @media (min-width:576px) {
@@ -215,10 +218,12 @@ a {
   box-sizing: border-box;
 }
 
+/* ///////////////////////////////////////////////////// */
+/* Notícias */
 .noticias {
   position: relative;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .noticias-titulo {
@@ -227,13 +232,15 @@ a {
 }
 
 .row {
-  display: flex;
+  /* display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
   flex-wrap: wrap;
   flex-flow: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start; */
+  position: relative;
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -248,24 +255,32 @@ a {
 
 @media (min-width: 576px) {
   .conteudos {
-    max-width: 50%;
+    /* max-width: 50%;
     flex: 0 0 50%;
     -ms-flex: 0 0 50%;
-    -webkit-box-flex: 0;
+    -webkit-box-flex: 0; */
   }
 }
 
 @media (min-width: 992px) {
   .conteudos {
-    max-width: 33.3333333333%;
+    /* max-width: 33.3333333333%;
     flex: 0 0 33.3333333333%;
     -ms-flex: 0 0 33.3333333333%;
-    -webkit-box-flex: 0;
+    -webkit-box-flex: 0; */
   }
 }
 
-.destaque {
+.noticia {
   /* display: flex;
+  flex-direction: row;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal; */
+  position: relative;
+}
+
+.destaque {
+  /*   display: flex;
   flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal; */
@@ -326,7 +341,6 @@ a {
   margin-bottom: 15px
 }
 
-
 .saiba-mais-rodape {
   display: flex;
   color: white;
@@ -337,18 +351,85 @@ a {
 
 
 
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Sobre */
+/* Saiba Mais */
+/* Contato */
+
+.sobre,
+.saibamais {
+  position: relative;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.sobre-imagem img {
+  height: 245px;
+}
+
+.sobre-nome,
+.sobre-redes {
+  color: #000;
+  font-weight: 600 !important;
+}
+
+.sobre-text,
+.saibamais-text {
+  padding-bottom: 10px !important;
+}
+
+ul {
+  padding-left: 20px;
+}
 
 .social-icons {
+  padding-top: 10px;
   text-align: left;
-  width: 300px;
+}
+
+.cabecalho-sm,
+.cabecalho-ct {
+  color: white;
+  text-align: center;
+  padding: 30px;
+  background: #3b4055;
+  background-image: url(../assets/banner/scoppio-di-coronavirus-nei-toni-del-blu.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cabecalho-title-sm,
+.cabecalho-title-ct {
+  position: relative;
+  color: white;
+  font-size: 30px;
+}
+
+@media (min-width:576px) {
+
+  .cabecalho-title-sm,
+  .cabecalho-title-ct {
+    font-size: 42px;
+  }
+}
+
+@media (min-width:768px) {
+
+  .cabecalho-title-sm,
+  .cabecalho-title-ct {
+    font-size: 52px;
+  }
 }
 
 
 
-
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+/* Footer */
 footer {
   color: white;
-  font-size: smaller;
+  font-size: smaller !important;
   text-align: center;
   padding: 10px;
   background-color: #3b4055;
